@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center gap-x-4 text-xl pb-3 cursor-pointer"
+    class="flex items-center gap-x-4 text-xl pb-3"
     :class="{
       'border-b-2  border-pink-400/40': selected,
     }"

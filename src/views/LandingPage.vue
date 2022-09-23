@@ -1,6 +1,6 @@
 <template>
   <!--Hero-->
-  <div class="pt-24 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
+  <div id="hero" class="pt-24 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center justify-between">
       <!--Left Col-->
       <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
@@ -37,9 +37,9 @@
       </g>
     </svg>
   </div>
-  <installation />
-  <why-us />
-  <section class="bg-white border-b py-8">
+  <installation id="installation" />
+  <why-us id="why-us" />
+  <section id="how" class="bg-white border-b py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Como lo uso?</h2>
       <div class="w-full mb-4">
