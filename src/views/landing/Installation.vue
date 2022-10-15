@@ -16,7 +16,7 @@
     </div>
   </section>
 </template>
-<script>
+<script setup>
 import { onMounted } from "vue-demi";
 import { LandingCodeView, ConnectedWorld, PermissionLess, Footer, WhyUs } from "./index";
 </script>

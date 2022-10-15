@@ -10,7 +10,7 @@ export const getAccountMetaData = async (metadata, store) => {
         const _nft = await metaplex.value
             .nfts()
             .load({ metadata })
-            .run()
+            
             
         store.dispatch("setNftMetadata", _nft);
         } catch {

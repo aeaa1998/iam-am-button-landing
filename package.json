@@ -1,12 +1,14 @@
 {
-  "name": "solana-i-am-vite",
+  "name": "iam-button-creator",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve-webpack": "vue-cli-service serve",
+    "build-webpack": "vue-cli-service build",
+    "preview-webpack": "serve -s dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
@@ -17,7 +19,7 @@
     "@highlightjs/vue-plugin": "^2.1.0",
     "@kyvg/vue3-notification": "^2.3.5",
     "@lottiefiles/lottie-player": "^1.5.7",
-    "@metaplex-foundation/js": "^0.15.0",
+    "@metaplex-foundation/js": "^0.17.1",
     "@metaplex-foundation/js-plugin-aws": "^0.1.3",
     "@metaplex-foundation/mpl-candy-machine": "^4.5.0",
     "@metaplex-foundation/mpl-token-metadata": "^2.2.3",
@@ -47,6 +49,7 @@
     "yarn": "^1.22.19"
   },
   "devDependencies": {
+    "@vue/cli-service": "~5.0.0",
     "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
     "@vitejs/plugin-vue": "^3.0.3",
     "assert": "^2.0.0",

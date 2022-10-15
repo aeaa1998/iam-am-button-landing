@@ -78,15 +78,15 @@ const availableCredentials = computed(() => {
 const fetchCredentials = async (owner) => {
   owner.fetching = true;
   const pb = new PublicKey(owner.address);
-  const _nfts = await metaplex.nfts().findAllByOwner({ owner: pb }).run();
+  const _nfts = await metaplex.nfts().findAllByOwner({ owner: pb });
 
   const nfts = await Promise.all(
     _nfts.map((nft) => {
-      return metaplex.nfts().load({ metadata: nft }).run();
+      return metaplex.nfts().load({ metadata: nft });
     })
   );
 
-  nftsMappedByAddress.value[owner.address] = nfts.filter((nft) => nft.json && nft.json.model == "credential" && nft.uri.includes("nft-metadata-augus"));
+  nftsMappedByAddress.value[owner.address] = nfts.filter((nft) => nft.json && nft.json.model == "credential" && nft.uri.includes("nft-metadata-augus") && nft.collection == null);
   owner.fetching = false;
 };
 
